@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="591.0" prefWidth="775.0" stylesheets="@../../../css/dark_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.UpdatedBook">
+   <children>
+      <StackPane layoutY="207.0" prefHeight="324.0" prefWidth="775.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="207.0">
+         <children>
+            <TableView fx:id="table_1" prefHeight="338.0" prefWidth="775.0">
+              <columns>
+                  <TableColumn fx:id="IDColumn" prefWidth="39.0" text="ID" />
+                <TableColumn fx:id="TitleColumn" prefWidth="182.0" text="Book Title" />
+                  <TableColumn fx:id="AuthorColumn" prefWidth="173.0" text="Author" />
+                  <TableColumn fx:id="PublisherColumn" prefWidth="159.0" text="Publisher" />
+                  <TableColumn fx:id="PageColumn" prefWidth="49.0" text="Page" />
+                  <TableColumn fx:id="CategoriesColumn" prefWidth="172.0" text="Categories" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+      <VBox layoutX="17.0" layoutY="14.0" prefHeight="180.0" prefWidth="210.0">
+         <children>
+            <TextField fx:id="titleField" prefHeight="39.0" prefWidth="210.0" promptText="Book Title" />
+            <TextField fx:id="authorField" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="210.0" promptText="Author">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="publisherField" layoutX="10.0" layoutY="49.0" prefHeight="39.0" prefWidth="210.0" promptText="Publisher">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="262.0" layoutY="14.0" prefHeight="180.0" prefWidth="210.0">
+         <children>
+            <TextField fx:id="pageField" prefHeight="39.0" prefWidth="210.0" promptText="Page" />
+            <ComboBox fx:id="categoriesBox" prefHeight="37.0" prefWidth="215.0" promptText="Categories">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </ComboBox>
+         </children>
+      </VBox>
+      <Button fx:id="UpdateBookButton" layoutX="524.0" layoutY="14.0" mnemonicParsing="false" onAction="#UpdateAction" prefHeight="37.0" prefWidth="163.0" text="Update Book" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="1032.0" stylesheets="@../../../css/dark_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.MemberController">
+    <children>
+        <MenuBar layoutY="-2.0" prefHeight="29.0" prefWidth="1031.0" visible="false" AnchorPane.bottomAnchor="549.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem fx:id="pdfitem" mnemonicParsing="false" onAction="#pdfAction" text="PDF" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <StackPane layoutY="27.0" prefHeight="578.0" prefWidth="978.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <TableView fx:id="memberTable" prefHeight="200.0" prefWidth="200.0" StackPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="idColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="58.0" resizable="false" text="ID" />
+                        <TableColumn fx:id="usernameColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="244.0" resizable="false" text="Username" />
+                        <TableColumn fx:id="mailColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="728.0" resizable="false" text="E-Mail" />
+                    </columns>
+                </TableView>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

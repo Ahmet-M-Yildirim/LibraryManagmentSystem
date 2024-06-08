@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="773.0" stylesheets="@../../../css/dark_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.DeleteBookController">
+   <children>
+      <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <TableView fx:id="table_1" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="IDColumn" editable="false" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="TitleColumn" editable="false" prefWidth="130.0" text="Title" />
+                  <TableColumn fx:id="AuthorColumn" editable="false" prefWidth="166.0" text="Author" />
+                  <TableColumn fx:id="PublisherColumn" editable="false" prefWidth="145.0" text="Publisher" />
+                  <TableColumn fx:id="PageColumn" editable="false" prefWidth="85.0" text="Page" />
+                  <TableColumn fx:id="CategoriesColumn" editable="false" prefWidth="171.0" text="Categories" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+      <Button fx:id="DeleteButton" layoutX="545.0" layoutY="35.0" mnemonicParsing="false" onAction="#DeleteAction" prefHeight="40.0" prefWidth="163.0" text="DELETE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="600.0" stylesheets="@../../../css/dark_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.SearchController">
+    <children>
+        <StackPane layoutY="214.0" prefHeight="111.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <TableView fx:id="Table" prefHeight="100.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="IDColumn" prefWidth="56.0" text="ID" />
+                        <TableColumn fx:id="TitleColumn" prefWidth="161.0" text="Book Title" />
+                        <TableColumn fx:id="AuthorColumn" prefWidth="238.0" text="Author" />
+                        <TableColumn fx:id="PublisherColumn" prefWidth="142.0" text="Publisher" />
+                    </columns>
+                </TableView>
+            </children>
+        </StackPane>
+        <StackPane layoutY="76.0" prefHeight="122.0" prefWidth="300.0" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="76.0">
+            <children>
+                <VBox prefHeight="151.0" prefWidth="300.0">
+                    <children>
+                        <ComboBox fx:id="comboBox" prefHeight="24.0" prefWidth="236.0">
+                            <VBox.margin>
+                                <Insets left="30.0" right="30.0" top="10.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <TextField fx:id="textField" prefHeight="31.0" prefWidth="240.0">
+                            <VBox.margin>
+                                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+        <StackPane alignment="CENTER_RIGHT" layoutY="-8.0" prefHeight="34.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c;" AnchorPane.bottomAnchor="287.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <StackPane layoutX="300.0" layoutY="76.0" prefHeight="138.0" prefWidth="300.0">
+            <children>
+                <VBox prefHeight="187.0" prefWidth="303.0">
+                    <children>
+                        <Button fx:id="searchButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#searchAction" prefHeight="34.0" prefWidth="301.0" styleClass="menuItem" text="Search" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets left="100.0" right="100.0" top="40.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/search-interface-symbol.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

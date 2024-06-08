@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" stylesheets="@../../../css/dark_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.Book_ListController">
+    <children>
+        <MenuBar layoutY="-4.0" prefHeight="25.0" prefWidth="600.0" styleClass="menuItem" visible="false" AnchorPane.bottomAnchor="375.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem fx:id="pdfItem" mnemonicParsing="false" text="PDF" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <StackPane layoutX="122.0" layoutY="27.0" prefHeight="373.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+            <children>
+                <TableView fx:id="Table" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="IDColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="48.0" resizable="false" text="ID" />
+                        <TableColumn fx:id="TitleColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="223.0" resizable="false" text="Title" />
+                        <TableColumn fx:id="AuthorColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="180.0" resizable="false" text="Author" />
+                        <TableColumn fx:id="PublisherColumn" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="147.0" resizable="false" text="Publisher" />
+                    </columns>
+                </TableView>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

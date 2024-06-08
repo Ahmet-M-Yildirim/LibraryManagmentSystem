@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="646.0" prefWidth="1080.0" stylesheets="@../../../css/dark_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lms.MainGraphicsController">
+   <children>
+      <TitledPane collapsible="false" layoutX="14.0" layoutY="24.0" prefHeight="245.0" prefWidth="264.0" text="General Information">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="164.0">
+               <children>
+                  <HBox layoutX="28.6" layoutY="29.6" prefHeight="126.0" prefWidth="245.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <Button fx:id="UserButton" cancelButton="true" contentDisplay="TOP" disable="true" mnemonicParsing="false" prefHeight="89.0" prefWidth="109.0" text="295">
+                           <graphic>
+                              <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/User6464.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="BooksButton" cancelButton="true" contentDisplay="TOP" disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="111.0" text="295">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/agenda.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" layoutX="22.0" layoutY="150.0" prefHeight="34.0" prefWidth="109.0" text="Registered Users" />
+                  <Label alignment="CENTER" layoutX="159.0" layoutY="147.0" prefHeight="34.0" prefWidth="40.0" text="Books" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane collapsible="false" layoutX="14.0" layoutY="278.0" prefHeight="354.0" prefWidth="534.0" text="People Who Read the Most Books">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="453.0">
+               <children>
+                  <TableView fx:id="Table_1" layoutX="19.6" layoutY="18.6" prefHeight="271.0" prefWidth="476.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
+                    <columns>
+                      <TableColumn fx:id="noColumn" prefWidth="49.99997103214264" text="No" />
+                      <TableColumn fx:id="usernameColumn" prefWidth="267.99999237060547" text="Username" />
+                        <TableColumn fx:id="readColumn" prefWidth="160.0" text="Number of Books Read" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane collapsible="false" layoutX="571.0" layoutY="19.0" prefHeight="608.0" prefWidth="492.0" text="Most Read Books">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="Table_2" layoutX="8.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="idColumn" prefWidth="42.000001549720764" text="No" />
+                      <TableColumn fx:id="bookColumn" prefWidth="113.99999237060547" text="Book Name" />
+                        <TableColumn fx:id="authorColumn" prefWidth="114.0" text="Author" />
+                        <TableColumn fx:id="bookCountColumn" prefWidth="175.0" text="Book Count" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <StackPane layoutX="287.0" layoutY="24.0" prefHeight="245.0" prefWidth="272.0">
+         <children>
+            <PieChart fx:id="pieChart" title="User and Book Distribution" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

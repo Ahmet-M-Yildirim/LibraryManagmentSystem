@@ -1,0 +1,242 @@
+.root {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #d4d4d4;
+    -fx-font-size: 14px;
+}
+
+.label {
+    -fx-text-fill: #d4d4d4;
+}
+
+.button {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #d4d4d4;
+    -fx-border-color: #5a5a5a;
+}
+
+.button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.text-field {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #d4d4d4;
+    -fx-prompt-text-fill: #8a8a8a;
+    -fx-border-color: #5a5a5a;
+    -fx-border-width : 1px;
+    -fx-border-radius : 0px;
+    -fx-padding : 5px;
+}
+
+.text-area {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #d4d4d4;
+    -fx-prompt-text-fill: #8a8a8a;
+    -fx-border-color: #5a5a5a;
+}
+
+.menuItem:hover {
+    -fx-border-color: rgb(0, 135, 153);
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.sidebarItem:hover {
+    -fx-background-color: #146886;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+.table-view {
+    -fx-background-color: #2b2b2b;
+    -fx-table-cell-border-color: #444;
+    -fx-table-header-border-color: #444;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #ffffff;
+}
+
+.table-view .column-header {
+    -fx-border-color : #505050;
+    -fx-border-width:1px;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #3c3c3c;
+}
+
+.table-row-cell {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #ffffff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3a3d42;
+}
+
+.menu-bar {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #d4d4d4;
+}
+
+.menu-item {
+    -fx-text-fill: #d4d4d4;
+}
+
+.menu-item:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.context-menu {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #d4d4d4;
+}
+
+.context-menu .menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d4d4d4;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #3c3c3c;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #3c3c3c;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #4a4a4a;
+    -fx-text-fill: #ffffff;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #d4d4d4;
+}
+
+.tab-pane .tab-label {
+    -fx-text-fill: #d4d4d4;
+}
+
+.tab-pane .tab:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #5a5a5a;
+}
+
+.combo-box {
+    -fx-background-color : #3c3c3c;
+    -fx-text-fill: #ffffff;
+    -fx-border-color : #5a5a5a;
+    -fx-border-width : 1px;
+    -fx-border-radius : 0px;
+    -fx-padding : 5px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color : #3c3c3c;
+    -fx-text-fill : #ffffff;
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color : #5a5a5a;
+    -fx-text-fill : #ffffff;
+}
+
+.combo-box .scroll-bar:vertical {
+    -fx-background-color : #cccccc;
+}
+
+.title-bar {
+    -fx-background-color : #333333;
+    -fx-padding:5px;
+}
+
+.title-bar .title-text {
+    -fx-text-fill:white;
+    -fx-font-size : 16px;
+    -fx-font-weight: bold;
+}
+
+.title-bar .close-button {
+    -fx-shape: "M0,0 L10,10 M10,0 L0,10"; 
+    -fx-background-color: #ff0000;
+}
+
+.titled-pane {
+    -fx-text-fill: #ccc;
+    -fx-background-color: #444;
+    -fx-border-color: #555;
+    -fx-border-width: 1;
+}
+
+.titled-pane > .title {
+    -fx-background-color: #555;
+    -fx-text-fill: #ccc;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-border-color: #444;
+    -fx-border-width: 0 0 1 0;
+}
+
+.titled-pane > .content {
+    -fx-background-color: #333;
+    -fx-padding: 10;
+    -fx-text-fill: #ccc;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: #ffffff;
+}
+
+.chart-pie-label {
+    -fx-text-fill: #3c3c3c;
+    -fx-font-size: 12px;
+}
+
+.chart-legend {
+    -fx-text-fill: #3c3c3c;
+    -fx-font-size: 12px;
+}
+
+.chart-title {
+    -fx-text-fill: #3c3c3c;
+    -fx-font-size: 16px;
+}
+.data0 {
+    -fx-pie-color: #ff0000; 
+}
+
+.data1 {
+    -fx-pie-color: #00ff00; 
+}
+
+.data2 {
+    -fx-pie-color: #0000ff; 
+}
+
+.checkbox {
+    -fx-text-fill: #d4d4d4; 
+}
+
+.checkbox:hover {
+    -fx-text-fill: #ffffff;
+}
+
+.checkbox:selected {
+    -fx-background-color: #4a4a4a; 
+}
+
+.checkbox:selected:hover {
+    -fx-background-color: #4a4a4a; 
+    -fx-text-fill: #ffffff; 
+}
+
